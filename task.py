@@ -11,7 +11,7 @@ def parse_words(text):
     """Split text to words"""
     words = re.split(r'[.,?!:;\s]+', text)
 
-    #remove all empty strings
+    # remove all empty strings
     words = list(filter(None, words))
     print(words)
     return len(words)
