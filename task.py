@@ -10,6 +10,9 @@ def load_text(path="input.txt"):
 def parse_words(text):
     """Split text to words"""
     words = re.split(r'[.,?!:;\s]+', text)
+
+    #remove all empty strings
+    words = list(filter(None, words))
     print(words)
     return len(words)
 
@@ -17,6 +20,7 @@ def parse_words(text):
 def parse_strings(text):
     """Split text to strings"""
     strings = re.split(r'[.?!]+', text)
+    strings = list(filter(None, strings))
     print(strings)
     return len(strings)
 
