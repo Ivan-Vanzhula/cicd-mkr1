@@ -1,0 +1,3 @@
+This is a test text to check the Python script.
+It contains several sentences and various delimiter symbols, such as comma, space, colon, and others!
+This text consists of five sentences and twelve words. It should end with a period...
